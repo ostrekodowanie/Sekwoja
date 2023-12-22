@@ -19,7 +19,6 @@ export default function Contact() {
     const message = data.get("message")?.toString();
     const user = process.env.NEXT_PUBLIC_EMAIL;
     const pass = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
-    console.log({ user, pass });
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -46,8 +45,8 @@ export default function Contact() {
   }
 
   return (
-    <section className="py-[0.8in] lg:py-[2in] sm:px-[8vw] md:px-[12vw] 2xl:pl-[16vw] lg:pr-0 flex flex-col gap-8 xl:gap-16 xl:items-center xl:grid grid-cols-[1fr_2fr] overflow-hidden">
-      <div className="flex flex-col gap-4">
+    <section className="py-[0.8in] lg:py-[1in] sm:px-[8vw] md:px-[12vw] 2xl:pl-[16vw] xl:pr-0 flex flex-col gap-8 xl:gap-16 xl:items-center xl:grid grid-cols-[1fr_2fr] overflow-hidden">
+      <div className="flex flex-col gap-4 px-[8vw] sm:px-0">
         <h3 className="text-sm text-secondary font-medium">
           Zrealizuj marzenia o idealnym wnętrzu
         </h3>
@@ -71,8 +70,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="bg-[#F7F3E5] h-[3.4in] relative rounded-l-xl flex items-center px-12 gap-12">
-        <div className="bg-white rounded-xl shadow-[0px_20px_40px_rgba(17,27,22,0.08)] py-10 px-8 flex flex-col gap-4 w-max xl:max-w-max min-h-[120%]">
+      <div className="xl:relative flex items-center px-[8vw] sm:px-0 xl:px-12 gap-12">
+        <div className="bg-white rounded-xl shadow-[0px_20px_40px_rgba(17,27,22,0.08)] py-10 px-8 flex flex-col gap-4 xl:w-max w-full min-h-[120%]">
           <h3 className="text-[22px] mb-4 font-medium">
             Wypełnij formularz, odezwiemy się!
           </h3>
@@ -100,7 +99,9 @@ export default function Contact() {
             <SubmitButton />
           </form>
         </div>
-        <Image className="self-end" src={contactMan} alt="Employer" />
+        <div className="absolute left-0 right-0 xl:w-full bg-[#F7F3E5] rounded-l-xl h-[3.4in] flex justify-end items-end w-screen xl:pr-12 -z-10">
+          <Image className="hidden xl:block" src={contactMan} alt="Employer" />
+        </div>
       </div>
     </section>
   );

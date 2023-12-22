@@ -28,7 +28,7 @@ function CategoryRef({ index, title, icon }: Category & { index: number }) {
       href="/"
       className={`${
         index > 3 ? "even:bg-[#F7F8F8]" : "odd:bg-[#F7F8F8]"
-      } border-collapse border-[1px] border-[#F7F8F8] py-10 px-8 flex flex-col gap-5 group`}
+      } border-collapse border-[1px] border-[#F7F8F8] py-10 px-[8vw] sm:px-8 flex flex-col gap-5 group`}
     >
       <Icon />
       <div className="flex items-center justify-between">
