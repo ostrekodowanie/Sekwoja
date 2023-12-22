@@ -9,10 +9,10 @@ export default function ArrowRightIcon() {
     >
       <path
         d="M0.774624 4.89962L9.0242 4.89962M9.0242 4.89962L5.31189 1.18731M9.0242 4.89962L5.31189 8.61194"
-        stroke="black"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        stroke="inherit"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

@@ -1,5 +1,6 @@
 import { LINKS } from "@/const/general";
 import NavLink from "./nav-link";
+import ArrowRightIcon from "@/assets/icons/arrow-right";
 
 export default function Footer() {
   return (
@@ -12,8 +13,11 @@ export default function Footer() {
           </NavLink>
         ))}
       </nav>
-      <button className="transition-colors rounded-md px-5 py-2.5 flex items-center gap-2 text-sm border-[#464646] border-[1px] hover:border-white hover:bg-white hover:text-background-dark text-white">
+      <button className="transition-colors rounded-md px-5 py-2.5 flex items-center gap-2 text-sm group border-[#464646] border-[1px] hover:border-white hover:bg-white hover:text-background-dark text-white">
         Do góry
+        <div className="-rotate-90 stroke-white group-hover:stroke-black transition-colors">
+          <ArrowRightIcon />
+        </div>
       </button>
     </footer>
   );

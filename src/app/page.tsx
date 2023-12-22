@@ -1,5 +1,7 @@
+import Advantages from "@/components/home/advantages";
 import Banner from "@/components/home/banner";
-import Hero from "@/components/home/hero";
+import Furniture from "@/components/home/furniture/furniture";
+import Hero from "@/components/home/hero/hero";
 import Kitchen from "@/components/home/kitchen";
 import Opinions from "@/components/home/opinions";
 import Partners from "@/components/home/partners";
@@ -14,7 +16,9 @@ export default function Home() {
       <Banner />
       <Opinions />
       <Kitchen />
+      <Advantages />
       <Sofa />
+      <Furniture />
       <Partners />
     </div>
   );

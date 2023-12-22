@@ -7,11 +7,7 @@ export default function TriangleIcon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M858.5 813L-159 0V813H858.5Z"
-        fill="#F3EFDE"
-        fill-opacity="0.5"
-      />
+      <path d="M858.5 813L-159 0V813H858.5Z" fill="#F3EFDE" fillOpacity="0.5" />
     </svg>
   );
 }

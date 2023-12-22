@@ -1,5 +1,6 @@
 import ArrowRightIcon from "@/assets/icons/arrow-right";
 import { CATEGORIES } from "@/const/products";
+import Link from "next/link";
 
 export default function Products() {
   return (
@@ -21,16 +22,21 @@ export default function Products() {
 function CategoryRef({ index, title, icon }: Category & { index: number }) {
   const Icon = () => icon;
   return (
-    <div
+    <Link
+      href="/"
       className={`${
         index > 3 ? "even:bg-[#F7F8F8]" : "odd:bg-[#F7F8F8]"
-      } border-collapse border-[1px] border-[#F7F8F8] py-10 px-8 flex flex-col gap-5`}
+      } border-collapse border-[1px] border-[#F7F8F8] py-10 px-8 flex flex-col gap-5 group`}
     >
       <Icon />
       <div className="flex items-center justify-between">
-        <h3 className="text-lg xl:text-xl">{title}</h3>
-        <ArrowRightIcon />
+        <h3 className="text-lg xl:text-xl group-hover:text-secondary transition-colors">
+          {title}
+        </h3>
+        <div className="group-hover:translate-x-1 -translate-x-1 transition-transform stroke-black">
+          <ArrowRightIcon />
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

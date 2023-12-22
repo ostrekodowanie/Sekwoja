@@ -9,3 +9,8 @@ type Opinion = {
   author: string;
   rating: string;
 };
+
+type Advantage = {
+  title: string;
+  icon: React.ReactNode;
+};
