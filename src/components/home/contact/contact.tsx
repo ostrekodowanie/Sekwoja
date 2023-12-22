@@ -1,8 +1,6 @@
 import ContactPhoneIcon from "@/assets/icons/contact-phone";
 import LocationIcon from "@/assets/icons/location";
 import MailIcon from "@/assets/icons/mail";
-import Button from "../../ui/button";
-import MessagesIcon from "@/assets/icons/messages";
 import Input from "../../ui/input";
 import Image from "next/image";
 import { contactMan } from "@/assets/images";
@@ -27,17 +25,29 @@ export default function Contact() {
       },
     });
     try {
-      await transporter.sendMail({
-        from: user,
-        to: user,
-        subject: `Nowe zatwierdzenie formularza ${new Date().toLocaleDateString()} - Sekwoja`,
-        text: `
+      await new Promise((resolve, reject) => {
+        transporter.sendMail(
+          {
+            from: user,
+            to: user,
+            subject: `Nowe zatwierdzenie formularza ${new Date().toLocaleDateString()} - Sekwoja`,
+            text: `
             Imię: ${firstName}
             Nazwisko: ${lastName}
             Numer telefonu: ${phone}
             Email: ${email}
             Message: ${message}
         `,
+          },
+          (error, info) => {
+            if (error) {
+              console.log({ error });
+              reject(error);
+            } else {
+              resolve(info);
+            }
+          }
+        );
       });
     } catch (err) {
       console.log({ err });
