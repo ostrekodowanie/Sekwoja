@@ -4,9 +4,11 @@ import Link from "next/link";
 
 export default function Products() {
   return (
-    <section className="flex flex-col gap-4 sm:px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[1in]">
-      <h2 className="text-2xl xl:text-3xl">Odkryj kolekcje cieszące oko</h2>
-      <p className="text-[#1C1C1C]/80 text-sm">
+    <section className="flex flex-col gap-4 sm:px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[0.6in] lg:py-[1in]">
+      <h2 className="text-2xl xl:text-3xl px-[8vw] sm:px-0">
+        Odkryj kolekcje cieszące oko
+      </h2>
+      <p className="text-[#1C1C1C]/80 text-sm px-[8vw] sm:px-0">
         Lorem ipsum dolor sit amet consectetur. Nam gravida lacinia nisl eu
         nulla pretium maecenas eget pulvinar.
       </p>

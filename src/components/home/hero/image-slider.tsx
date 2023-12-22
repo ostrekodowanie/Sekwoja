@@ -27,18 +27,21 @@ export default function ImageSlider({
 
   return (
     <Fragment>
-      <div className="absolute inset-0 w-full h-full">
-        <Image
-          className="object-cover"
-          fill
-          sizes="100vw"
-          src={IMAGES[currentImage]}
-          alt="Room photo"
-        />
-        <div className="bg-[#151308]/50 absolute inset-0 w-full h-full z-10"></div>
+      <div className="lg:absolute lg:inset-0 lg:w-full lg:h-full grid grid-cols-1 lg:grid-cols-[4fr_5fr] flex-1">
+        <div className="bg-background-dark hidden lg:block"></div>
+        <div className="w-full h-full relative">
+          <Image
+            className="object-cover"
+            fill
+            sizes="(min-width: 768px) 60vw, 100vw"
+            src={IMAGES[currentImage]}
+            alt="Room photo"
+          />
+        </div>
+        {/* <div className="bg-[#151308]/50 absolute inset-0 w-full h-full z-10"></div> */}
       </div>
       {children}
-      <div className="flex flex-col gap-3 justify-self-end relative z-10">
+      <div className="absolute right-[8vw] bottom-4 lg:relative lg:right-0 flex flex-col gap-3 justify-self-end z-10">
         {Array.from(Array(IMAGES.length)).map((_item, i) => (
           <button
             onClick={() => setCurrentImage(i)}

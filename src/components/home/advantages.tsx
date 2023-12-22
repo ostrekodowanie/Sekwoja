@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Advantages() {
   return (
-    <section className="flex flex-col gap-4 sm:px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[1in] relative">
+    <section className="flex flex-col gap-4 px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[0.6in] lg:py-[1in] relative">
       <p className="text-primary uppercase text-sm text-center">
         dlaczego warto postawić na nas
       </p>
