@@ -12,7 +12,7 @@ export default function Products() {
         Lorem ipsum dolor sit amet consectetur. Nam gravida lacinia nisl eu
         nulla pretium maecenas eget pulvinar.
       </p>
-      <div className="flex flex-col sm:grid grid-cols-2 xl:grid-cols-4 mt-8">
+      <div className="grid grid-cols-2 xl:grid-cols-4 mt-8">
         {CATEGORIES.map((category, i) => (
           <CategoryRef index={i} {...category} key={category.title} />
         ))}
@@ -31,11 +31,11 @@ function CategoryRef({ index, title, icon }: Category & { index: number }) {
       } border-collapse border-[1px] border-[#F7F8F8] py-10 px-[8vw] sm:px-8 flex flex-col gap-5 group`}
     >
       <Icon />
-      <div className="flex items-center justify-between">
+      <div className="flex items-start justify-between gap-2">
         <h3 className="font-medium text-lg xl:text-xl group-hover:text-secondary transition-colors">
           {title}
         </h3>
-        <div className="group-hover:translate-x-1 -translate-x-1 transition-transform stroke-black">
+        <div className="group-hover:translate-x-1 -translate-x-1 transition-transform stroke-black mt-2">
           <ArrowRightIcon />
         </div>
       </div>

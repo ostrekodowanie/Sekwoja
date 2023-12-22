@@ -5,7 +5,7 @@ import ImageSlider from "./image-slider";
 
 export default function Hero() {
   return (
-    <section className="bg-background-dark min-h-[85vh] lg:min-h-[70vh] lg:px-[12vw] 2xl:px-[16vw] flex flex-col lg:grid grid-cols-2 lg:items-center relative">
+    <section className="bg-background-dark min-h-[90vh] lg:min-h-[70vh] lg:px-[12vw] 2xl:px-[16vw] flex flex-col lg:grid grid-cols-2 lg:items-center relative">
       <ImageSlider>
         <div className="flex flex-col gap-4 relative z-10 py-16 lg:py-0 px-[8vw] md:px-[12vw] lg:px-0 order-first">
           <h1 className="font-semibold text-3xl xl:text-4xl 2xl:text-[40px] 2xl:leading-[46px] text-white">
