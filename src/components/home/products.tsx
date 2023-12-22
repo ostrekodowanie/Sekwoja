@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Products() {
   return (
     <section className="flex flex-col gap-4 sm:px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[0.6in] lg:py-[1in]">
-      <h2 className="text-2xl xl:text-3xl px-[8vw] sm:px-0">
+      <h2 className="font-medium text-2xl xl:text-3xl px-[8vw] sm:px-0">
         Odkryj kolekcje cieszące oko
       </h2>
       <p className="text-[#1C1C1C]/80 text-sm px-[8vw] sm:px-0">
@@ -32,7 +32,7 @@ function CategoryRef({ index, title, icon }: Category & { index: number }) {
     >
       <Icon />
       <div className="flex items-center justify-between">
-        <h3 className="text-lg xl:text-xl group-hover:text-secondary transition-colors">
+        <h3 className="font-medium text-lg xl:text-xl group-hover:text-secondary transition-colors">
           {title}
         </h3>
         <div className="group-hover:translate-x-1 -translate-x-1 transition-transform stroke-black">

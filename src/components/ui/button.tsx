@@ -13,7 +13,7 @@ export default function Button({
   return (
     <button
       {...props}
-      className={`transition-colors rounded-md px-5 py-2.5 flex items-center gap-2 text-sm ${
+      className={`font-medium transition-colors disabled:opacity-60 rounded-md px-5 py-2.5 flex items-center gap-2 text-sm ${
         variant === "primary"
           ? "bg-primary hover:bg-[#FFD125]/80 transition-colors"
           : "bg-white border-[#E2E2E2] border-[1px]"

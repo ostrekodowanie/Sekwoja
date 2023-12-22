@@ -8,10 +8,10 @@ export default function Hero() {
     <section className="bg-background-dark min-h-[85vh] lg:min-h-[70vh] lg:px-[12vw] 2xl:px-[16vw] flex flex-col lg:grid grid-cols-2 lg:items-center relative">
       <ImageSlider>
         <div className="flex flex-col gap-4 relative z-10 py-12 lg:py-0 px-[8vw] md:px-[12vw] lg:px-0 order-first">
-          <h1 className="text-3xl xl:text-4xl 2xl:text-[40px] 2xl:leading-[46px] text-white">
+          <h1 className="font-semibold text-3xl xl:text-4xl 2xl:text-[40px] 2xl:leading-[46px] text-white">
             Stwórz swoją wymarzoną przestrzeń z naszymi meblami
           </h1>
-          <p className="text-[#ECECEC]">
+          <p className="text-[#ECECEC] font-medium">
             Projektujemy i dostarczamy wyjątkowe meble, które nadadzą Twojemu
             wnętrzu niepowtarzalny charakter.
           </p>

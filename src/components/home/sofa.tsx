@@ -3,9 +3,9 @@ import Button from "../ui/button";
 
 export default function Sofa() {
   return (
-    <section className="px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[1in] lg:py-[2in] md:grid grid-cols-2 items-center bg-[#F7F3E5]/75 relative">
+    <section className="px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[0.8in] lg:py-[2in] md:grid grid-cols-2 items-center bg-[#F7F3E5]/75 relative">
       <div className="flex flex-col gap-4 relative z-10">
-        <h2 className="text-2xl xl:text-3xl mb-4 select-none max-w-[6in]">
+        <h2 className="font-medium text-2xl xl:text-3xl mb-4 select-none max-w-[6in]">
           Odkryj naszą kolekcję{" "}
           <div className="inline-block after:block after:h-[3px] after:bg-primary after:w-full after:max-w-[75%] after:transition-all hover:after:max-w-[50%]">
             <span>nowoczesnych sof</span>

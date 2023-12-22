@@ -1,6 +1,6 @@
 import Advantages from "@/components/home/advantages";
 import Banner from "@/components/home/banner";
-import Contact from "@/components/home/contact";
+import Contact from "@/components/home/contact/contact";
 import Furniture from "@/components/home/furniture/furniture";
 import Hero from "@/components/home/hero/hero";
 import Kitchen from "@/components/home/kitchen";

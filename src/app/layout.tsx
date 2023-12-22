@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const urbanist = Urbanist({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Sekwoja - Meble na wymiar",
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={urbanist.className}>
         <Header />
         <main>{children}</main>
         <Footer />

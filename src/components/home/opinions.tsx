@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Opinions() {
   return (
     <section className="bg-background-dark px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[0.6in] lg:py-[1in] flex flex-col gap-4">
-      <h2 className="text-2xl xl:text-3xl text-white">
+      <h2 className="font-medium text-2xl xl:text-3xl text-white">
         Co mowią o nas klienci
       </h2>
       <p className="text-white/80 text-sm">

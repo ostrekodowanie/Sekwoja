@@ -7,9 +7,9 @@ import {
 
 export default function Kitchen() {
   return (
-    <section className="px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[1in] lg:py-[2in] flex flex-col md:grid grid-cols-2 gap-16 md:gap-32 md:items-center">
+    <section className="px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[0.8in] lg:py-[2in] flex flex-col md:grid grid-cols-2 gap-16 md:gap-32 md:items-center">
       <div className="flex flex-col gap-4">
-        <h2 className="text-2xl xl:text-3xl mb-4 select-none">
+        <h2 className="font-medium text-2xl xl:text-3xl mb-4 select-none">
           Odkryj kolekcje{" "}
           <div className="inline-block after:block after:h-[3px] after:bg-primary after:w-full after:max-w-[75%] after:transition-all hover:after:max-w-[50%] after:ml-auto">
             <span>kuchni klasycznej</span>

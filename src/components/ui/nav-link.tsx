@@ -18,7 +18,10 @@ export default function NavLink({
   }
 
   return (
-    <button className={`text-sm ${className}`} onClick={handleScroll}>
+    <button
+      className={`text-sm font-medium ${className}`}
+      onClick={handleScroll}
+    >
       {children}
     </button>
   );
