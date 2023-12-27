@@ -1,10 +1,18 @@
 "use client";
 
-import { slider1, slider2, slider3 } from "@/assets/images/hero/hero";
+import {
+  slider1,
+  slider2,
+  slider3,
+  slider4,
+  slider5,
+  slider6,
+  slider7,
+} from "@/assets/images/hero/hero";
 import Image from "next/image";
 import { Fragment, useEffect, useRef, useState } from "react";
 
-const IMAGES = [slider1, slider2, slider3];
+const IMAGES = [slider1, slider2, slider3, slider4, slider5, slider6, slider7];
 
 export default function ImageSlider({
   children,
