@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Opinions() {
   return (
-    <section className="bg-background-dark px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[0.6in] lg:py-[1in] flex flex-col gap-4">
+    <section className="bg-background-dark px-[8vw] md:px-[4vw] 2xl:px-[16vw] py-[0.6in] lg:py-[1in] flex flex-col gap-4">
       <h2 className="font-medium text-2xl xl:text-3xl text-white">
         Co mowią o nas klienci
       </h2>
@@ -12,7 +12,7 @@ export default function Opinions() {
         Lorem ipsum dolor sit amet consectetur. Nam gravida lacinia nisl eu
         nulla pretium maecenas eget pulvinar.
       </p>
-      <div className="mt-8 flex flex-col gap-6 xl:grid grid-cols-3">
+      <div className="mt-8 flex flex-col gap-6 lg:grid grid-cols-3">
         {OPINIONS.map((opinion, i) => (
           <OpinionRef {...opinion} key={`opinion:${i}`} />
         ))}

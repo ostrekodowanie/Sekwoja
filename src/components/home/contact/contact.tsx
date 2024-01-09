@@ -55,7 +55,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="py-[0.8in] lg:py-[1in] sm:px-[8vw] md:px-[12vw] 2xl:pl-[16vw] xl:pr-0 flex flex-col gap-8 xl:gap-16 xl:items-center xl:grid grid-cols-[1fr_2fr] overflow-hidden">
+    <section className="py-[0.8in] lg:py-[1in] sm:px-[8vw] md:px-[4vw] 2xl:pl-[16vw] xl:pr-0 flex flex-col gap-8 xl:gap-16 xl:items-center xl:grid grid-cols-[1fr_2fr] overflow-hidden">
       <div className="flex flex-col gap-4 px-[8vw] sm:px-0">
         <h3 className="text-sm text-secondary font-medium">
           Zrealizuj marzenia o idealnym wnętrzu

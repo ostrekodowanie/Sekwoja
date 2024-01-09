@@ -6,21 +6,16 @@ import { LINKS } from "@/const/general";
 import Image from "next/image";
 import { logo } from "@/assets/images";
 import Link from "next/link";
+import Nav from "./nav";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-20 bg-white border-[#E2E2E2] border-b-[1px] flex items-center justify-between px-[8vw] md:px-[12vw] 2xl:px-[16vw] h-[72px]">
+    <header className="sticky top-0 z-20 bg-white border-[#E2E2E2] border-b-[1px] flex items-center justify-between px-[8vw] md:px-[4vw] 2xl:px-[16vw] h-[64px] md:h-[72px] -ml-4">
       <Link href="/">
         <Image width={96} height={48} src={logo} alt="Sekwoja Logo" />
       </Link>
-      <nav className="flex items-center gap-[calc(2rem+1vw)]">
-        {LINKS.map((link) => (
-          <NavLink title={link} key={link}>
-            {link}
-          </NavLink>
-        ))}
-      </nav>
-      <div className="flex items-center gap-2">
+      <Nav />
+      <div className="items-center gap-2 hidden md:flex">
         <Button className="fill-secondary" variant="secondary">
           <PhoneIcon /> Zamów rozmowę
         </Button>

@@ -19,7 +19,7 @@ export default function NavLink({
 
   return (
     <button
-      className={`text-sm font-medium ${className}`}
+      className={`text-sm font-medium py-2 md:py-0 ${className}`}
       onClick={handleScroll}
     >
       {children}

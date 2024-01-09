@@ -4,10 +4,10 @@ import ImageSlider from "./image-slider";
 
 export default function Furniture() {
   return (
-    <section className="bg-background-dark flex flex-col xl:grid grid-cols-[4fr_5fr]">
+    <section className="bg-background-dark flex flex-col lg:grid grid-cols-[4fr_5fr]">
       <ImageSlider>
         <div
-          className="py-[0.8in] lg:py-[2in] px-[8vw] md:pl-[6vw] md:pr-[12vw] 2xl:pl-[8vw] 2xl:pr-[16vw]"
+          className="py-[0.8in] lg:py-[2in] px-[8vw] md:pl-[6vw] md:pr-[8vw] 2xl:pl-[8vw] 2xl:pr-[16vw]"
           style={{
             backgroundImage: `url(${brushPattern.src})`,
           }}

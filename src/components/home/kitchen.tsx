@@ -8,7 +8,7 @@ import {
 
 export default function Kitchen() {
   return (
-    <section className="px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-[0.6in] lg:py-[1.6in] flex flex-col lg:grid grid-cols-2 gap-16 lg:gap-32 lg:items-center">
+    <section className="px-[8vw] md:px-[4vw] 2xl:px-[16vw] py-[0.6in] lg:py-[1.6in] flex flex-col lg:grid grid-cols-2 gap-16 2xl:gap-32 lg:items-center">
       <div className="flex flex-col gap-4">
         <h2 className="font-medium text-2xl xl:text-3xl mb-4 select-none">
           Odkryj kolekcje{" "}

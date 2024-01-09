@@ -4,7 +4,7 @@ import ArrowRightIcon from "@/assets/icons/arrow-right";
 
 export default function Footer() {
   return (
-    <footer className="bg-background-dark flex-col gap-y-8 gap-x-2 sm:flex-row flex sm:items-center justify-between px-[8vw] md:px-[12vw] 2xl:px-[16vw] py-8">
+    <footer className="bg-background-dark flex-col gap-y-8 gap-x-2 sm:flex-row flex sm:items-center justify-between px-[8vw] md:px-[4vw] 2xl:px-[16vw] py-8">
       <div></div>
       <nav className="flex items-center gap-x-[calc(2rem+1vw)] gap-y-2 flex-wrap">
         {LINKS.map((link) => (

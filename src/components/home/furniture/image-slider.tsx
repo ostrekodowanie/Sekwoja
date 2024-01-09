@@ -27,7 +27,8 @@ export default function ImageSlider({
 
   return (
     <Fragment>
-      <div className="w-full h-full relative">
+      {children}
+      <div className="w-full h-full relative lg:order-first min-h-[50vh] lg:min-h-0">
         <Image
           className="object-cover"
           fill
@@ -47,7 +48,6 @@ export default function ImageSlider({
           ))}
         </div>
       </div>
-      {children}
     </Fragment>
   );
 }
